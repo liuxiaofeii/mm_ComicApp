@@ -1,2 +1,2 @@
-# mmcode
-存储代码
+# mancheng_app
+关于漫画APP的项目
