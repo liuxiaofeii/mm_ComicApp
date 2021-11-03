@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:context=".UserMessageActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/ll_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorBg"
+    >
+
+        <ImageView
+
+                android:id="@+id/iv_bg_top_act_book_detail2"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:scaleType="centerCrop"
+                android:src="@color/purple_700" tools:ignore="MissingConstraints"/>
+        <ImageView
+                android:src="?attr/actionModeCloseDrawable"
+                android:layout_width="50dp"
+                android:layout_height="100dp" android:id="@+id/backmine" tools:ignore="MissingConstraints"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="150dp"
+            android:orientation="horizontal">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView3"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_gravity="center_vertical"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:src="@drawable/icon_night" />-->
+        <TextView
+                android:id="@+id/messageview1"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textSize="24sp"/>
+        <TextView
+                android:id="@+id/username_message"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:gravity="center_vertical"
+                android:text="昵称"
+                android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <View
+            android:id="@+id/view3"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/iv_cover"
+            android:layout_marginTop="200dp"
+            android:layout_weight="1"
+            android:background="@color/colorBgDark" tools:ignore="NotSibling"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="220dp"
+            android:orientation="horizontal">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView11"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:src="@drawable/icon_cache" />-->
+        <TextView
+                android:id="@+id/messageview2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="邮箱"
+                android:textSize="24sp"/>
+
+        <TextView
+                android:id="@+id/email_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="邮箱"
+                android:textSize="24sp"/>
+
+    </LinearLayout>
+
+    <View
+            android:id="@+id/view4"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:layout_below="@id/iv_cover"
+            android:layout_marginTop="270dp"
+            android:layout_weight="1"
+            android:background="@color/colorBgDark" tools:ignore="NotSibling"/>
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="290dp"
+            android:orientation="horizontal">
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imageView12"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginLeft="10dp"-->
+        <!--            android:src="@drawable/icon_feedback" />-->
+        <TextView
+                android:id="@+id/messageview3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="手机号码"
+                android:textSize="24sp"/>
+        <TextView
+                android:id="@+id/phone_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="手机号码"
+                android:textSize="24sp"/>
+
+    </LinearLayout>
+    <ImageView
+
+            android:id="@+id/iv_bg_top_act_book_detail3"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:src="@color/purple_700" android:layout_marginTop="860dp"/>
+
+
+</RelativeLayout>

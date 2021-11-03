@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" android:layout_width="match_parent"
+              android:layout_height="wrap_content" android:orientation="vertical">
+
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:background="#F2EBF4">
+        <ImageView
+                android:layout_width="115dp"
+                app:srcCompat="@drawable/a1" android:id="@+id/bookphoto1" android:layout_height="153dp"/>
+        <TextView
+                android:text="致命毒药\n第x话"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/bookname1"
+                android:layout_marginTop="50dp"
+
+                android:background="#F2EBF4" android:layout_marginLeft="7dp" android:textSize="24sp"
+                android:fontFamily="monospace"/>
+
+        <Button
+                android:text="继续阅读"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content" android:id="@+id/continueread" android:layout_marginTop="50dp"
+                android:layout_marginLeft="20dp" android:background="@color/purple_200"/>
+
+
+    </LinearLayout>
+    <View
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:background="@color/colorBgDark" android:id="@+id/view7"/>
+</LinearLayout>

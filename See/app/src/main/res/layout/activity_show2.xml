@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F1E3E3">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+
+            app:toolbarId="@+id/toolbar">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+
+                    android:id="@+id/iv_bg_top_act_book_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="200dp"
+                    android:scaleType="centerCrop"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:src="@color/colorOrange" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_cover_act_comic_detail"
+                    android:layout_width="115dp"
+                    android:layout_height="153dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="95dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="15dp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <ImageView
+                        android:id="@+id/iv_cover_act_book_detail"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="centerCrop"
+                        tools:src="@color/colorLightGrey" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                        android:id="@+id/tv_name_act_book_detail"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:ellipsize="end"
+                        android:singleLine="true"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@id/cv_cover_act_comic_detail"
+                        app:layout_constraintTop_toTopOf="@id/cv_cover_act_comic_detail"
+                        tools:text="穿越300年后"/>
+
+                <TextView
+                    android:id="@+id/tv_author_act_book_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/cv_cover_act_comic_detail"
+                    app:layout_constraintTop_toBottomOf="@id/tv_name_act_book_detail"
+                    tools:text="小小作文" />
+                <ImageView
+                    android:id="@+id/iv_icon_fire_act_comic_detail"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginBottom="10dp"
+                    android:src="@drawable/svg_fire_white"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_bg_top_act_book_detail"
+                    app:layout_constraintStart_toStartOf="@id/tv_name_act_book_detail" />
+
+                <TextView
+                    android:id="@+id/tv_popularity_act_book_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="10dp"
+                    android:ellipsize="end"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp"
+                    app:layout_constraintBottom_toBottomOf="@id/iv_icon_fire_act_comic_detail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toEndOf="@id/iv_icon_fire_act_comic_detail"
+                    app:layout_constraintTop_toTopOf="@id/iv_icon_fire_act_comic_detail"
+                    tools:text="19.1亿" />
+
+
+                <Button
+                    android:id="@+id/btn_offline_cache_act_book_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_offline_cache"
+                    android:text="离线缓存"
+                    android:textColor="@color/colorRed"
+                    app:layout_constraintBottom_toBottomOf="@+id/cv_cover_act_comic_detail"
+                    app:layout_constraintEnd_toStartOf="@+id/btn_start_read_act_book_detail"
+                    app:layout_constraintHorizontal_chainStyle="spread"
+                    app:layout_constraintStart_toEndOf="@+id/cv_cover_act_comic_detail"
+                    app:layout_constraintTop_toBottomOf="@+id/iv_bg_top_act_book_detail" />
+
+                <Button
+                    android:id="@+id/btn_start_read_act_book_detail"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/bg_btn_start_read"
+                    android:text="开始阅读"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textColor="@color/colorWhite"
+                    app:layout_constraintBottom_toBottomOf="@+id/btn_offline_cache_act_book_detail"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/btn_offline_cache_act_book_detail"
+                    app:layout_constraintTop_toTopOf="@+id/btn_offline_cache_act_book_detail" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_act_book_detail"
+                android:layout_width="match_parent"
+                android:layout_height="75dp"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+            </androidx.appcompat.widget.Toolbar>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </androidx.core.widget.NestedScrollView>
+
+    <include
+        android:id="@+id/layout_top_act_book_detail"
+        layout="@layout/layout_top" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

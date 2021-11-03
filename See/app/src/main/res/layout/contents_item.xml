@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+
+        android:background="@drawable/home_list_selected_bg"
+        >
+
+
+
+
+    <TextView
+            android:id="@+id/contentNO"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="50dp"
+            android:gravity="center_vertical"
+            android:text="第1话 虚拟尤物"
+            android:textColor="@color/colorTextColorLight" />
+</LinearLayout>

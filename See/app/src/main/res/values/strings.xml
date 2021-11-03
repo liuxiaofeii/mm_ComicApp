@@ -1,0 +1,26 @@
+<resources>
+    <string name="app_name">See</string>
+    <string name="title_activity_button">MainActivity</string>
+    <string name="title_home">主页</string>
+    <string name="title_notifications">我的</string>
+    <string name="title_login">登录</string>
+    <string-array name="year">
+        <item >16</item>
+        <item >17</item>
+        <item >18</item>
+        <item >19</item>
+        <item >20</item>
+        <item >21</item>
+        <item >22</item>
+        <item >23</item>
+        <item >24</item>
+        <item >25</item>
+    </string-array>
+    <string-array name="holl">
+        <item>游泳</item>
+        <item>健身</item>
+        <item>打游戏</item>
+        <item>学日语</item>
+        <item>爱逛街</item>
+    </string-array>
+</resources>

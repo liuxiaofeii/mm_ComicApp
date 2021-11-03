@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="test">
+  <database-model serializer="dbm" dbms="SQLITE" family-id="SQLITE" format-version="4.20">
+    <root id="1">
+      <ServerVersion>3.34.0</ServerVersion>
+    </root>
+    <schema id="2" parent="1" name="main">
+      <Current>1</Current>
+    </schema>
+    <collation id="3" parent="1" name="BINARY"/>
+    <collation id="4" parent="1" name="NOCASE"/>
+    <collation id="5" parent="1" name="RTRIM"/>
+    <table id="6" parent="2" name="amyscs"/>
+    <table id="7" parent="2" name="book10contents"/>
+    <table id="8" parent="2" name="book11contents"/>
+    <table id="9" parent="2" name="book12contents"/>
+    <table id="10" parent="2" name="book13contents"/>
+    <table id="11" parent="2" name="book1contents"/>
+    <table id="12" parent="2" name="book2contents"/>
+    <table id="13" parent="2" name="book3contents"/>
+    <table id="14" parent="2" name="book4contents"/>
+    <table id="15" parent="2" name="book5contents"/>
+    <table id="16" parent="2" name="book6contents"/>
+    <table id="17" parent="2" name="book7contents"/>
+    <table id="18" parent="2" name="book8contents"/>
+    <table id="19" parent="2" name="book9contents"/>
+    <table id="20" parent="2" name="books"/>
+    <table id="21" parent="2" name="contents"/>
+    <table id="22" parent="2" name="sqlite_master">
+      <System>1</System>
+    </table>
+    <table id="23" parent="2" name="sqlite_sequence">
+      <System>1</System>
+    </table>
+    <table id="24" parent="2" name="users"/>
+    <column id="25" parent="6" name="scId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="26" parent="6" name="userId">
+      <Position>2</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <key id="27" parent="6">
+      <ColNames>scId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="28" parent="7" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="29" parent="7" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="30" parent="7" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="31" parent="7" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="32" parent="7" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="33" parent="7">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="34" parent="8" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="8" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="36" parent="8" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="37" parent="8" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="38" parent="8" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="39" parent="8">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="40" parent="9" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="41" parent="9" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="42" parent="9" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="43" parent="9" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="44" parent="9" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="45" parent="9">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="46" parent="10" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="47" parent="10" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="48" parent="10" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="49" parent="10" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="50" parent="10" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="51" parent="10">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="52" parent="11" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="53" parent="11" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="54" parent="11" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="55" parent="11" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="56" parent="11" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="57" parent="11">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="58" parent="12" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="59" parent="12" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="60" parent="12" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="61" parent="12" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="62" parent="12" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="63" parent="12">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="64" parent="13" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="65" parent="13" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="66" parent="13" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="67" parent="13" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="68" parent="13" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="69" parent="13">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="70" parent="14" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="71" parent="14" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="72" parent="14" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="73" parent="14" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="74" parent="14" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="75" parent="14">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="76" parent="15" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="77" parent="15" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="78" parent="15" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="79" parent="15" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="80" parent="15" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="81" parent="15">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="82" parent="16" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="83" parent="16" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="84" parent="16" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="85" parent="16" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="86" parent="16" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="87" parent="16">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="88" parent="17" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="89" parent="17" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="90" parent="17" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="91" parent="17" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="92" parent="17" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="93" parent="17">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="94" parent="18" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="95" parent="18" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="96" parent="18" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="97" parent="18" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="98" parent="18" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="99" parent="18">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="100" parent="19" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="101" parent="19" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="102" parent="19" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="103" parent="19" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="104" parent="19" name="contentDescri">
+      <Position>5</Position>
+      <DataType>varchar(64)|0s</DataType>
+    </column>
+    <key id="105" parent="19">
+      <ColNames>contentId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="106" parent="20" name="bookId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>null</SequenceIdentity>
+    </column>
+    <column id="107" parent="20" name="bookName">
+      <Position>2</Position>
+      <DataType>VARCHAR(128)|0s</DataType>
+    </column>
+    <column id="108" parent="20" name="bookIntro">
+      <Position>3</Position>
+      <DataType>VARCHAR(3072)|0s</DataType>
+    </column>
+    <column id="109" parent="20" name="bookPhoto">
+      <Position>4</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="110" parent="20" name="bookLabel">
+      <Position>5</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="111" parent="20" name="bookFree">
+      <Position>6</Position>
+      <DataType>VARCHAR(1)|0s</DataType>
+    </column>
+    <column id="112" parent="20" name="bookPrice">
+      <Position>7</Position>
+      <DataType>DECIMAL(32,8 digit)|0s</DataType>
+    </column>
+    <column id="113" parent="20" name="bookAuthor">
+      <Position>8</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="114" parent="20" name="bookReadNums">
+      <Position>9</Position>
+      <DataType>INT|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="115" parent="20" name="isDelete">
+      <Position>10</Position>
+      <DataType>VARCHAR(1)|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="116" parent="20" name="scNum">
+      <Position>11</Position>
+      <DataType>INT|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <column id="117" parent="20" name="categoryId">
+      <Position>12</Position>
+      <DataType>INT|0s</DataType>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <key id="118" parent="20">
+      <ColNames>bookId</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="119" parent="21" name="contentId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="120" parent="21" name="contentPath">
+      <Position>2</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+    </column>
+    <column id="121" parent="21" name="contentBookId">
+      <Position>3</Position>
+      <DataType>integer|0s</DataType>
+    </column>
+    <column id="122" parent="21" name="contentNO">
+      <Position>4</Position>
+      <DataType>INT|0s</DataType>
+    </column>
+    <column id="123" parent="21" name="contentDescri">
+      <Position>5</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="124" parent="22" name="type">
+      <Position>1</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="125" parent="22" name="name">
+      <Position>2</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="126" parent="22" name="tbl_name">
+      <Position>3</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="127" parent="22" name="rootpage">
+      <Position>4</Position>
+      <DataType>int|0s</DataType>
+    </column>
+    <column id="128" parent="22" name="sql">
+      <Position>5</Position>
+      <DataType>text|0s</DataType>
+    </column>
+    <column id="129" parent="23" name="name">
+      <Position>1</Position>
+    </column>
+    <column id="130" parent="23" name="seq">
+      <Position>2</Position>
+    </column>
+    <column id="131" parent="24" name="userId">
+      <Position>1</Position>
+      <DataType>INTEGER|0s</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="132" parent="24" name="userName">
+      <Position>2</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="133" parent="24" name="password">
+      <Position>3</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="134" parent="24" name="phone">
+      <Position>4</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="135" parent="24" name="email">
+      <Position>5</Position>
+      <DataType>VARCHAR(32)|0s</DataType>
+    </column>
+    <column id="136" parent="24" name="sc">
+      <Position>6</Position>
+      <DataType>VARCHAR(1024)|0s</DataType>
+      <DefaultExpression>&apos;&apos;</DefaultExpression>
+    </column>
+    <column id="137" parent="24" name="history">
+      <Position>7</Position>
+      <DataType>varchar(32)|0s</DataType>
+    </column>
+    <key id="138" parent="24">
+      <ColNames>userId</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
